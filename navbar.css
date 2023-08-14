@@ -1,0 +1,49 @@
+.nav-enlace{
+    background: salmon;
+    color: white;
+    padding: 10px 30px;
+    /*Para poder trabajar con "flexbox" se necesita poner "display" y en el formato que desees poner en este caso son de formato bloque*/
+    display: inline-block; 
+    text-decoration: none;
+}
+.nav-enlace:hover{
+    background: gray;
+}
+
+nav{
+    background: purple;
+    padding: 10px;
+    display: flex; /*Flexbox*/
+    justify-content: space-around;
+}
+
+.nav-button{
+    background:  salmon;
+    color: white;
+    padding: 10px 0;
+    border: 2px solid white;
+    display: none;
+    
+}
+
+/* Se hace un limite de resolucion que cuando pasa cierta 
+cantidad de pixeles se cambia al siguiente margen establecido */
+@media (max-width: 600px) {
+    nav{
+        background: black;
+        flex-direction: column;
+    }
+    .nav-enlace{
+    margin: 10px 0;
+    }
+    .nav-button{
+        display: inline-block;
+    }
+    .desaparece{
+        display: none;
+    }
+ }
+
+
+
+ 
